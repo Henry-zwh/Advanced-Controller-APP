@@ -59,3 +59,14 @@ To run this project, you will need to install the following Python libraries:
 You can install them via pip:
 ```bash
 pip install opencv-python pyserial matplotlib numpy
+```
+
+## How to Run
+
+- 1. Ensure all dependencies are installed.
+- 2. Place all project code files in the same directory.
+- 3. Run the main script from your terminal:
+
+```bash
+python main.py
+```
