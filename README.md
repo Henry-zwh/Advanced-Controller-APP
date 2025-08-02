@@ -65,11 +65,7 @@ pip install opencv-python pyserial matplotlib numpy
 
 1. Ensure all dependencies are installed.
 2. Place all project code files in the same directory.
-3. Run the main script from your terminal:
-
-```bash
-python main.py
-```
+3. Run the main script from your terminal.
 
 ## Functionality Guide
 
@@ -94,3 +90,10 @@ python main.py
 - **Synchronization Module**:
 
   **Start Record** & Receive: When a camera is previewing and a serial port is connected, click the "Start Record & Receive" button. This will simultaneously trigger both video recording and serial data reception. Clicking it again will stop both processes at the same time.
+
+## Data Output
+
+All generated data is saved in the data/ folder in the project's root directory:
+
+- **Video Files**: Stored in data/video/, named with the format CAM[ID]_[Timestamp].avi.
+- **Signal Logs**: Stored in data/signal/, named with the format CH[ID]_[Timestamp].csv.
