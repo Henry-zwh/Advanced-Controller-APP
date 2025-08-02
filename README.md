@@ -7,7 +7,7 @@
 `Advanced Controller APP` is a desktop application built with Python and Tkinter, designed for scenarios that require simultaneous control and data acquisition from multiple cameras and serial devices. It features a GUI for real-time video previewing, video recording, sending control commands, and live-plotting/logging of signal data from external hardware.
 
 <p align="center">
-  <img src="assets/appview.png" alt="app view" width="500" />
+  <img src="assets/appview.png" alt="app view" width="600" />
 </p>
 
 ## Core Features
