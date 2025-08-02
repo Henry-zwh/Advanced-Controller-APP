@@ -70,3 +70,16 @@ pip install opencv-python pyserial matplotlib numpy
 ```bash
 python main.py
 ```
+
+## Functionality Guide
+
+- **Camera Module**:
+  - **Refresh** Cameras: Click the "Refresh Cameras" button to scan for cameras connected to the system.
+  - **Select & Preview**: Choose different cameras and resolutions from the dropdown menus for "Camera 1" and "Camera 2". Click "Start Preview" to display the live feed on the canvases.
+  - **Record**: While previewing, click "Start Record" to begin recording video. Click it again to stop. Recorded videos will be saved in the data/video/ directory.
+
+- **Serial Communication Module**:
+
+
+
+- **Synchronization Module**:
