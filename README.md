@@ -96,7 +96,7 @@ python main.py
 
 ## Data Output
 
-All generated data is saved in the data/ folder in the project's root directory:
+All generated data is saved in the `data/ folder` in the project's root directory:
 
 - **Video Files**: Stored in `data/video/`, named with the format `CAM[ID]_[Timestamp].avi`.
 - **Signal Logs**: Stored in `data/signal/`, named with the format `CH[ID]_[Timestamp].csv`.
