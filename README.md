@@ -15,29 +15,25 @@
 - **Dual Camera Control**:
   - Automatically scans and lists available cameras.
   - Allows independent selection of resolutions for each camera.
-  - Provides a real-time preview of up to two video streams.
+  - Provides a real-time preview of up to 2 video streams.
 
-- **Multi-threaded Video Recording**:
+- **Video Recording**:
   - Records video streams into local `.avi` files.
   - The recording process runs in a separate thread to ensure a smooth, non-blocking GUI experience.
 
-- **Serial Device Communication**:
-  - Automatically scans and lists available serial ports (COM ports).
+- **Serial Communication**:
+  - Automatically scans and lists available serial ports.
   - Supports connection with a custom baud rate.
-  - Sends predefined control commands to hardware via the GUI (e.g., controlling LED modes).
+  - Sends predefined control commands to hardware via the GUI.
 
 - **Real-time Data Plotting & Logging**:
-  - Receives data from serial devices and plots waveforms in real-time using Matplotlib.
+  - Receives data from serial and plots waveforms in real-time using Matplotlib.
   - The plot features dynamic axis scaling to always display the most recent data window.
-  - Allows inserting "Markers" into the data stream for easier post-analysis.
+  - Allows inserting "Marker" into the data stream for easier post-analysis.
   - Saves the received signal data, along with timestamps and markers, into `.csv` files.
 
 - **Synchronized Recording**:
-  - A one-click "Synchronized Recording" feature starts (or stops) both video recording and serial data logging simultaneously, ensuring temporal alignment of the data.
-
-- **Modular and Robust Architecture**:
-  - Employs a design pattern similar to MVC (Model-View-Controller), clearly separating business logic (`AppController`), the user interface (`AppGUI`), and underlying services (`CameraManager`, `SerialManager`, etc.).
-  - Makes extensive use of multi-threading for time-consuming tasks (camera/port scanning, video writing, serial data reading) to maintain a highly responsive UI.
+  - A one-click "Record-Receive" feature starts (or stops) both video recording and serial data logging simultaneously, ensuring temporal alignment of the data.
 
 ## Project Structure
 
