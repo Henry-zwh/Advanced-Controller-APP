@@ -13,27 +13,27 @@
 ## Core Features
 
 - **Dual Camera Control**:
-  - Automatically scans and lists available cameras.
-  - Allows independent selection of resolutions for each camera.
-  - Provides a real-time preview of up to 2 video streams.
+  Automatically scans and lists available cameras.
+  Allows independent selection of resolutions for each camera.
+  Provides a real-time preview of up to 2 video streams.
 
 - **Video Recording**:
-  - Records video streams into local `.avi` files.
-  - The recording process runs in a separate thread to ensure a smooth, non-blocking GUI experience.
+  Records video streams into local `.avi` files.
+  The recording process runs in a separate thread to ensure a smooth, non-blocking GUI experience.
 
 - **Serial Communication**:
-  - Automatically scans and lists available serial ports.
-  - Supports connection with a custom baud rate.
-  - Sends predefined control commands to hardware via the GUI.
+  Automatically scans and lists available serial ports.
+  Supports connection with a custom baud rate.
+  Sends predefined control commands to hardware via the GUI.
 
 - **Real-time Data Plotting & Logging**:
-  - Receives data from serial and plots waveforms in real-time using Matplotlib.
-  - The plot features dynamic axis scaling to always display the most recent data window.
-  - Allows inserting "Marker" into the data stream for easier post-analysis.
-  - Saves the received signal data, along with timestamps and markers, into `.csv` files.
+  Receives data from serial and plots waveforms in real-time using Matplotlib.
+  The plot features dynamic axis scaling to always display the most recent data window.
+  Allows inserting "Marker" into the data stream for easier post-analysis.
+  Saves the received signal data, along with timestamps and markers, into `.csv` files.
 
 - **Synchronized Recording**:
-  - A one-click "Record-Receive" feature starts (or stops) both video recording and serial data logging simultaneously, ensuring temporal alignment of the data.
+  A one-click "Record-Receive" feature starts (or stops) both video recording and serial data logging simultaneously, ensuring temporal alignment of the data.
 
 ## Project Structure
 
@@ -74,12 +74,15 @@ python main.py
 ## Functionality Guide
 
 - **Camera Module**:
-  - **Refresh** Cameras: Click the "Refresh Cameras" button to scan for cameras connected to the system.
-  - **Select & Preview**: Choose different cameras and resolutions from the dropdown menus for "Camera 1" and "Camera 2". Click "Start Preview" to display the live feed on the canvases.
-  - **Record**: While previewing, click "Start Record" to begin recording video. Click it again to stop. Recorded videos will be saved in the data/video/ directory.
+  **Refresh Cameras**: Click the "Refresh Cameras" button to scan for cameras connected to the system.
+  **Select & Preview**: Choose different cameras and resolutions from the dropdown menus for "Camera 1" and "Camera 2". Click "Start Preview" to display the live feed on the canvases.
+  **Record**: While previewing, click "Start Record" to begin recording video. Click it again to stop. Recorded videos will be saved in the data/video/ directory.
 
 - **Serial Communication Module**:
-
-
+  **Connect**: Click "Refresh Ports" to scan for available ports. After selecting a port and baud rate, click "Connect" to establish a connection.
+  **LED Control**: Once connected, you can select channels and click "LED On" to send an activation command. While on, you can select different modes and click "Update LED" to change the device's state.
+  **Receive Data**: Select the channels you want to receive data from and click "Start Receive". Data will be plotted in real-time on the chart below and logged to a CSV file in the data/signal/ directory.
+  **Add Marker**: While receiving data, click "Add Marker" to insert a vertical dashed line on the plot and mark the next data point with a '1' in the CSV log.
 
 - **Synchronization Module**:
+  **Start Record** & Receive: When a camera is previewing and a serial port is connected, click the "Start Record & Receive" button. This will simultaneously trigger both video recording and serial data reception. Clicking it again will stop both processes at the same time.
