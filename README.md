@@ -53,12 +53,13 @@ To run this project, you will need to install the following Python libraries:
 
 - **opencv-python**: For camera operations.
 - **pyserial**: For serial communication.
+- **pillow**: For converting the OpenCV image format into a format that Tkinter can display.
 - **matplotlib**: For data plotting.
 - **numpy**: A dependency for Matplotlib, also used for data handling.
 
 You can install them via pip:
 ```bash
-pip install opencv-python pyserial matplotlib numpy
+pip install opencv-python pyserial pillow matplotlib numpy
 ```
 
 ## How to Run
